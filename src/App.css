@@ -1,0 +1,1322 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans';
+}
+/*Header*/
+
+
+.header{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.321);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans';
+}
+.company{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.menubutton{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.logoimg{
+  width: 25px;
+  /* margin-left: 16px; */
+}
+.menuimg{
+  width: 20px;
+  margin-right: 20px;
+}
+.name{
+  font-family: "DM Sans";
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.menubar{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: -100%;
+  width: 80vw;
+  height: 100%;
+  background-color: green;
+}
+.menubutton {
+  cursor: pointer;
+}
+
+.menubar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.menubar-open {
+  transition: 0.3s;
+  right: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+
+/*Page1*/
+.page1{
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  max-height: auto;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.circle-small{
+  width: 12px;
+  height: 12px;
+  background-color: #006EFF;
+  border-radius: 80px;
+  margin-right: 8px;
+}
+.tagimg{
+  width: 18px;
+  margin-right: 8px;
+}
+.firsttag{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag{
+  width: max-content;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 40px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tagname{
+  font-weight: 400;
+  font-size: 14px;
+}
+.heroheader{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: 600;
+}
+.description{
+  width: 84%;
+  padding-right:8%;
+  padding-left: 8%;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: grey;
+}
+.banner{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookingbanner{
+  min-width:80% ;
+  max-width: 80%;
+  margin-top: 40px;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*Booking Banner*/
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.tag-name{
+  color: #006EFF;
+  font-size: 12px;
+  font-weight: 500;
+}
+.center{
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+}
+.desc{
+  font-size: 10px;
+  color: rgb(84, 84, 84);
+  margin-top: 8px;
+}
+.bookbutton{
+  width: 80%;
+  height: 45px;
+  margin-bottom: 12px;
+  margin-top: 20px;
+  background-color: #006EFF;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/*Page2*/
+
+.page2{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  flex-direction: column;
+}
+.page2heading{
+  text-align: center;
+  letter-spacing: 0.1;
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.block{
+  width: 45%;
+  margin: 1.5%;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  scale: 0.95;
+}
+.topblock{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.topblockimg{
+  width: 35px;
+}
+.centerblock{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+.endblock{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 25px;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 12px;
+  color: #006EFF;
+}
+
+/*Page3*/
+.page3{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  flex-direction: column;
+}
+.feedbackcard{
+  width: max-content;
+  padding: 5px;
+  background-color: green;
+  border-radius: 40px;
+}
+.feedback{
+  width: 250px;
+}
+.cardimage{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url('/avatar.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/*Footer*/
+.footer{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height:auto;
+  margin-top: 40px;
+  background-color: #000000;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.companyfooter{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logofooter{
+  width: 40px;
+  margin-right: 20px;
+}
+.namefooter{
+  color: white;
+  font-weight: 500;
+  font-size: 38px;
+}
+.companyslogan{
+  width: 80%;
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+.twobuttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.primarybuttonfooter{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.secondarybuttonfooter{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid white;
+}
+.copyright{
+  border-top: 0.5px solid rgb(66, 66, 66);
+  margin-top: 40px;
+  padding-top: 20px;
+  color: grey;
+}
+
+
+
+/*Booking Page*/
+
+.bookingpage{
+  width: 100%;
+  height: auto;
+  /* min-height: 100vh; */
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.bookinghead{
+  font-size: 42px;
+  color: black;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index1{
+  width: 100%;
+  
+}
+.locationdiv{
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #006EFF;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 15px;
+}
+.pickuplocation,.droplocation{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.droplocation{
+  border: none;
+}
+.firsticon{
+  width: 18px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+.selectinput{
+  width: 80%;
+  border: none;
+}
+.seconddivpass{
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.passengers{
+  width: 42.5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  aspect-ratio: 1;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tagpass{
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  transform: translateY(15px);
+}
+.passengercount{
+  font-size: 64px;
+  font-weight: 600;
+  color: black;
+  transform: translateY(12px);
+}
+.buttonspassengers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #006EFF;
+  font-size: 36px;
+}
+.decreasebuttonpass{
+  margin-right: 20px;
+}
+.increasebuttonpass{
+  margin-left: 20px;
+}
+.dayornight{
+  width: 42.5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  aspect-ratio: 1;
+  background-color: #006EFF;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tagdayornight{
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+.descdayornight{
+  font-size: 12px;
+  font-weight: 500;
+  color: skyblue;
+  margin-bottom: 12px;
+}
+.imgdayornight{
+  width: 45px;
+}
+.day{
+  background-color: #006EFF;
+}
+.night{
+  background-color: #030025;
+}
+
+.ridetime{
+  width: 42.5%;
+  margin-left: 5%;
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  margin-right: 2.5%;
+  aspect-ratio: 1;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ridetimeimg{width: 45px;}
+.tagridetime{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.ridetimeinput {
+  width: 60%;
+  border:none;
+  border-radius: 4px;
+  background-color: white;
+  padding: 6px;
+  font-size: 16px;
+  margin-top: 15px;
+  font-family: 'DM Sans';
+}
+.fromhostel{
+  width: 42.5%;
+  margin-right: 5%;
+  margin-left: 2.5%;
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  aspect-ratio: 1;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bookingsummary{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #000000;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid grey;
+}
+.hide{
+  display: none;
+}
+.firstsummary{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.secondsummary{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.from,.to{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 18px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.circle{
+  width: 8px;
+  height: 8px;
+  color: #ffffff;
+  background-color: #006EFF;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.seperator{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex: 1;
+  height: 1px;
+  border-top: 1.5px dotted #ffffff;
+}
+.checkfarebutton{
+  width: 75%;
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle2{
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+.from2{
+  font-size: 18px;
+  font-weight: 700;
+}
+.to2{
+  font-size: 8px;
+  color: grey;
+}
+.circlehide{
+  display: none;
+}
+
+/*Index 2*/
+.index2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.driversList{
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.selectdriverhead{
+  width: 90%;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.drivertile{
+  width: 90%;
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driverinfo{
+  width:80%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.driverbutton{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driverimg{
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.driverinfodetails{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.drivername{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.driverage{
+  font-size: 12px;
+  color: grey;
+  font-weight: 500;
+}
+.selectedtag{
+  width: 20px;
+}
+.backbutton{
+  width: 20px;
+  margin-right: 12px;
+}
+
+
+.index3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.bookridefinalbuttondiv{
+  width: 80%;
+  height: 60px;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid grey;
+}
+.locationdetailssummary{
+  margin-top: 12px;
+  width: 90%;
+  height: auto;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.pickupsummary{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.pickuptagsumary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-left: 25px;
+  color: grey;
+}
+.pickuplocationname{
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.circlesummary{
+  width: 8px;
+  height: 8px;
+}
+.sep{
+  width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+    height: 1px;
+    border-top: 1.5px dotted rgb(97, 97, 97);
+    margin-top: 20px;
+}
+.specifics{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blackcircle{
+  background-color: black;
+  margin-left: 20px;
+}
+.drivertilesummary{
+  background-color: #000000;
+  color: white;
+}
+.driverbuttonsummary{
+  font-size: 18px;
+  font-weight: 600;
+  flex-direction: column;
+}
+.faretag{
+  color: grey;
+  font-size: 10px;
+  font-weight: 600;
+}
+.drivernamesummary{
+  font-weight: 600;
+  color: white;
+ 
+}
+.driveragesummary{
+  color: grey;
+}
+.submitbutton{
+  width: 80%;
+  height: 60px;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  border: 1px solid grey;
+}
+.faresummary{
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faretag2{
+  font-size: 18px;
+  font-weight: 800;
+}
+.finalFare{
+  font-size: 18px;
+  font-weight: 800;
+}
+.editpassengerbutton{
+  width: max-content;
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  color: blue;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #f6f6f6;
+}
+
+
+
+
+
+
+
+
+/*Toggle*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-top: 12px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #006eff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+
+/*Loader*/
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px dotted #000000;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  scale: 0.5;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #353535;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} 
+
+
+/*Loader*/
+.loader2 {
+  width: 48px;
+  height: 48px;
+  border: 3px dotted #f4f4f4;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  scale: 0.5;
+}
+.loader2::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #006EFF;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+} 
+
+
+/*Modal*/
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 70%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.modal-content {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.modal-input {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-buttons {
+  margin-top: 10px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  background-color: #006eff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+
+/*Booking Succesful*/
+.succcesfulbooking{
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: translateY(-50px); */
+}
+.successheading{
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0px;
+}
+.arrow{
+  width: 25px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.locationbooking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+}
+.passengersbooking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+}
+.driverDetails{
+  margin-top: 30px;
+  width: 75%;
+  height: auto;
+  padding: 16px;
+  /* height: 120px; */
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000000;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.driverinfobooking{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.driverimgbooking{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.infobooking{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.drivernamebooking{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+.driveragebooking{
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+}
+.circlebooking{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 8px;
+}
+.driverspecifics{
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+.driverspecifics2{
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+  /* margin-top: 12px; */
+}
+.calldriverbutton{
+  position: fixed;
+  bottom: 30px;
+  background-color: #006EFF;
+  width: 80%;
+  height: 60px;
+  /* padding: 10px 25px; */
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.mssg{
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.terms{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin: 60px;
+}
+.termshead{
+  text-align: start;
+}
