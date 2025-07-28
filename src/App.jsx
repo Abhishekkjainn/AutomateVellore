@@ -10,6 +10,7 @@ import SelectDriver from './pages/selectDriver';
 import BookingSuccessful from './pages/bookingSuccessful';
 import Terms from './pages/termsandconditions';
 import usePageAnalytics,{ sendDeviceInfoAnalytics, useActiveUserTracker, useUserJourneyAnalytics } from './functions';
+import { useEffect } from 'react';
 
 
 function App() {
