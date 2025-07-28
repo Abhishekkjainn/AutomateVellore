@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Lottie from 'react-lottie';
 import { useLocation } from 'react-router-dom';
+import usePageAnalytics,{ sendButtonClickAnalytics } from '../functions';
 
 export default function BookingSuccessful() {
   const location = useLocation();
@@ -8,6 +9,12 @@ export default function BookingSuccessful() {
   console.log(bookingDetails + 'Booking Data succesfull');
 
   const [animationData, setAnimationData] = useState(null);
+
+  usePageAnalytics({
+        apikey: "XsnYviKhchr6",
+        pagename: "Booking Succesful Page",
+        enabled: true, // optional, defaults to true
+      });
 
   useEffect(() => {
     fetch('/success.json')
@@ -74,6 +81,9 @@ export default function BookingSuccessful() {
       <a
         href={`tel:${bookingDetails.driver.phone}`}
         className="calldriverbutton"
+        onClick={()=>{
+                  sendButtonClickAnalytics({apikey : 'XsnYviKhchr6', buttonName:"Call Driver Button"});
+                }}
       >
         Call Driver
       </a>

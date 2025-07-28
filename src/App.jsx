@@ -9,8 +9,24 @@ import Footer from './components/footer';
 import SelectDriver from './pages/selectDriver';
 import BookingSuccessful from './pages/bookingSuccessful';
 import Terms from './pages/termsandconditions';
+import usePageAnalytics,{ sendDeviceInfoAnalytics, useActiveUserTracker, useUserJourneyAnalytics } from './functions';
+
 
 function App() {
+  useActiveUserTracker({
+    apikey: 'XsnYviKhchr6',
+    enabled: true
+  });
+
+  useUserJourneyAnalytics({ apikey: 'XsnYviKhchr6', enabled: true });
+  useEffect(() => {
+      sendDeviceInfoAnalytics({ apikey: 'XsnYviKhchr6', getLocation: true });
+  }, []);
+  usePageAnalytics({
+    apikey: "XsnYviKhchr6",
+    pagename: "Home Page",
+    enabled: true, // optional, defaults to true
+  });
   return (
     <Router>
       <Header />

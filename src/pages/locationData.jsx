@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import usePageAnalytics from '../functions';
 export default function LocationData() {
   // State Hooks
   const [time, setTime] = useState(new Date().toISOString().slice(11, 16)); // Default to current time
@@ -21,6 +22,12 @@ export default function LocationData() {
       .then((data) => setLocations(data.options))
       .catch((error) => console.error('Error loading JSON:', error));
   }, []);
+
+  usePageAnalytics({
+        apikey: "XsnYviKhchr6",
+        pagename: "Location Page",
+        enabled: true, // optional, defaults to true
+      });
 
   // Custom styles for the Select component
   const customStyles = {

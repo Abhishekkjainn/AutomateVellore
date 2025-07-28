@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { useNavigate } from 'react-router-dom';
+import usePageAnalytics,{ sendButtonClickAnalytics } from '../functions';
 
 export default function BookingPage() {
   const navigate = useNavigate();
@@ -30,6 +31,11 @@ export default function BookingPage() {
       .then((data) => setLocations(data.options))
       .catch((error) => console.error('Error loading JSON:', error));
   }, []);
+  usePageAnalytics({
+      apikey: "XsnYviKhchr6",
+      pagename: "Booking Page",
+      enabled: true, // optional, defaults to true
+    });
 
   useEffect(() => {
     // Check if user data is already stored
@@ -320,7 +326,7 @@ export default function BookingPage() {
           </div>
           <div
             className="editpassengerbutton"
-            onClick={() => setModalVisible(true)}
+             onClick={() => {setModalVisible(true); sendButtonClickAnalytics({apikey : 'XsnYviKhchr6', buttonName:"Edit User Info"})}}
           >
             Edit User Information
           </div>
@@ -448,7 +454,7 @@ export default function BookingPage() {
             <div className="faretag2">Total Fare</div>
             <div className="finalFare">{fareData.fare.split(' ')[0]}</div>
           </div>
-          <div className="submitbutton" onClick={() => bookTheRide()}>
+          <div className="submitbutton" onClick={() => {bookTheRide();sendButtonClickAnalytics({ apikey: 'XsnYviKhchr6', buttonName: "Final Booking Button" })}}>
             {loading ? <span className="loader2"></span> : 'Book the Ride'}
           </div>
         </div>
@@ -507,7 +513,10 @@ export default function BookingPage() {
                 </div>
               </div>
               <div className="secondsummary">
-                <div className="checkfarebutton" onClick={handleCheckFare}>
+                <div className="checkfarebutton" onClick={() => {
+                    handleCheckFare();
+                    sendButtonClickAnalytics({ apikey: 'XsnYviKhchr6', buttonName: "Check Fare Button" });
+                  }}>
                   {loading ? <span className="loader"></span> : 'Check Fare'}
                 </div>
               </div>
@@ -532,12 +541,13 @@ export default function BookingPage() {
               <div
                 className="checkfarebutton"
                 onClick={() => {
-                  if (selectedDriver != null) {
-                    setIndex(2);
-                  } else {
-                    alert('Please select a driver');
-                  }
-                }}
+                                  if (selectedDriver != null) {
+                                    setIndex(2);
+                                  } else {
+                                    alert('Please select a driver');
+                                  }
+                                  sendButtonClickAnalytics({ apikey: 'XsnYviKhchr6', buttonName: "Confirm Driver" })
+                                }}
               >
                 {loading ? <span className="loader"></span> : 'Confirm Driver'}
               </div>
